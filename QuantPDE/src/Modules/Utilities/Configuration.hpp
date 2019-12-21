@@ -8,7 +8,11 @@
 #include <fstream>  // std::ifstream
 #include <iostream> // std::cin
 #include <string>   // std::string
+#if _MSC_VER
+#include "./getopt.h"
+#else
 #include <unistd.h> // std::getopt
+#endif
 
 namespace QuantPDE {
 

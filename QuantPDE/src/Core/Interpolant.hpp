@@ -93,10 +93,9 @@ typedef InterpolantWrapper<3> InterpolantWrapper3;
 template <Index Dimension>
 class InterpolantFactory {
 
+public:
 	typedef InterpolantWrapper<Dimension> WI;
 	typedef std::unique_ptr<InterpolantFactory> P;
-
-public:
 
 	/**
 	 * Destructor.
